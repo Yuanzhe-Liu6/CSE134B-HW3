@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            border: 1px outset black;
+        }
+    </style>
+    <link rel="prev" href="resume.html">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Helper</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Career Helper</h1>
+    </header>
+    
+    <nav>
+        <a href="resume.html">Resume</a> |
+        <a href="jobs.html">Jobs</a>
+    </nav>
+
+    <main>
+        
+        <figure>
+            <img src="img/career.jpg" alt="career" width="600" height="450">
+            <figcaption>src: https://economictimes.indiatimes.com/jobs/five-ways-to-build-a-rewarding-career/articleshow/60916721.cms</figcaption>
+        </figure>
+    <canvas id="canvas" width="200" height="100"></canvas>
+    <svg>
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"></circle>
+    </svg>
+    <script>
+        var c = document.getElementById('canvas');
+        var ctx = c.getContext('2d')
+        ctx.fillStyle = "#2acaea";
+        ctx.fillRect(0, 0, 200, 100);
+    </script>
+    </main>
+    <h1>Looking for a Job?</h1>
+    <aside>
+        <h3><i>What do you want learn more about?</i></h3>
+        <ul>
+            <li><a href="resume.html"><em>How to Write My Resume</em></a></li>
+            <li><a href="jobs.html"><em>Jobs Information</em></a></li>
+        </ul>
+        <form action="http://httpbin.org/get" method="get">
+            <label for="query">Search</label>
+            <input type="text" name="major" id="query">
+            <input type="submit" value="Submit">
+        </form>
+    </aside>
+    <div class="tips">
+        <h2>Here are some tips</h2>
+        <pre><strong>Apply earlly!  Apply earlly!   Apply earlly!</strong></pre>
+        <hr>
+        <ol>
+            <li>Look for connection around you.</li>
+            <li>Ask instructors and department advisores for advice.</li>
+            <li>Utilizing all the helper tools.</li>
+        </ol>
+    </div>
+
+    <section>
+        <h2>Job Matching</h2>
+        <p>Check out what your future jobs may be in the following link</p>
+        <iframe src="https://whatcanidowiththismajor.com/major/" width="1200" height="800"></iframe>
+    </section>
+
+    <section>
+        <h2>Be What You Want To</h2>
+        <p><b>But always keep in mind that you can be what you want to be.</b></p>
+        <p>Darin - <code>Be What You Wanna Be</code></p>
+        <audio id="darin" controls>
+            <source src="music/darin.mp3">
+        </audio>
+    </section>
+    
+    <template>
+        <img src="img/logo.png">
+    </template>
+    
+    <footer>
+        made by Yuanzhe Liu
+    </footer>
+</body>
+</html>
