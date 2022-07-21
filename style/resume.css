@@ -44,5 +44,27 @@ nav a{
 main{
     padding-top: 1.5rem;
     text-align: center;
-    display: grid;
+  
+}
+
+iframe{
+    width: 60vw;
+    height: 50vh;
+}
+
+@media screen and (max-width: 1366px) {
+
+    iframe{
+        width: 90vw;
+        height: 80vh;
+    }
+}
+@media screen and (max-width: 600px) {
+
+    iframe{
+        width: 90vw;
+        height: 60vh;
+    }
+
+
 }
