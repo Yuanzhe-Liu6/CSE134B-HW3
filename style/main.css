@@ -41,9 +41,7 @@ header > h1{
     width: 8rem;
 
 }
-figcaption{
-    font-size: small;
-}
+
 
 nav {
     background-color: var(--nav-color);
@@ -78,8 +76,8 @@ main{
     text-align: center;
 }
 aside{
-    float: left;
-    position: fixed;
+    float: right;
+
     background-color: aqua;
     text-align: center;
 }
@@ -89,9 +87,7 @@ aside *{
     background-color: aqua;
 }
 
-h1, h2{
-    text-align: center;
-}
+
 iframe{
     text-align: center;
     background-color: aliceblue;
@@ -99,10 +95,7 @@ iframe{
 .tip{
     border: 1px outset aquamarine;
 }
-.tips pre{
-    text-align: center;
-    
-}
+
 
 pre {
     font-size: 1.5rem;
@@ -113,7 +106,9 @@ ol{
     padding-left: 40%;
     font-size: 1.5rem;
   }
-
+#beWhat{
+    text-align: left;
+}
 @media screen and (max-width: 1366px) {
     header{
         font-size: xx-large;
@@ -124,13 +119,23 @@ ol{
         background: url("../img/career.jpg") repeat 0 0;
         background-color: var(--header-color);
     }
+    pre {
+        font-size: 1rem;
+    }
+
+
+
     ol{
         padding: 0%;
-    }
-    ol{
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: left;
+
       }
+
+    iframe{
+        width: 90vw;
+        height: 80vh;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -143,8 +148,27 @@ ol{
         background: url("../img/home1.png") repeat 0 0;
         background-color: var(--header-color);
     }
+
+    pre {
+        font-size: 1rem;
+    }
+
     ol{
 
-        font-size: 1.5rem;
+        font-size: 1rem;
       }
+    aside{
+        border: 1px solid black;
+        background-color: white;
+        float: none;
+        text-align: left;
+    }
+    aside *{
+        background-color: white;
+    }
+
+    iframe{
+        width: 90vw;
+        height: 60vh;
+    }
 }
