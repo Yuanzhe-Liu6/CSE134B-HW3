@@ -1,0 +1,88 @@
+:root{
+    --vw-lg: 1920px;
+    --vw-md: 1366px;
+    --vw-sm: 600px;
+    --bg-color: white;
+    --nav-color: bisque;
+    font-size: large;
+    --header-color: #1ed49d;
+}
+* {
+    background-color: var(--bg-color);
+}
+
+
+header{
+    font-size: xx-large;
+    margin: auto;
+    text-align: center;
+    padding-top: 1.5rem;
+    height: 35rem;
+    background-color: var(--header-color);
+}
+
+
+
+
+header > h1{
+    background-color: yellow;
+    border: 0.1rem solid greenyellow;
+    font-size: 2rem;
+    border-radius: 100%;
+    width: 8rem;
+
+}
+figcaption{
+    font-size: small;
+}
+
+nav {
+    background-color: var(--nav-color);
+    position:fixed;
+    top: 0;
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: right;
+    padding-right: 20%;
+}
+
+nav a:hover{
+    background-color: sienna;
+    
+}
+
+nav a{
+/*     background-color: var(--nav-color);
+    padding-right: 5rem;
+    text-align: center; */
+    float: right;
+    display: block;
+    background-color: var(--nav-color);
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+h1, h2{
+    text-align: center;
+}
+iframe{
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.tips pre{
+    text-align: center;
+}
+
+pre {
+    font-size: 1.5rem;
+}
+ol{
+    text-align: left;
+    list-style-position: inside;
+    padding-left: 40%;
+    font-size: 1.5rem;
+  }
