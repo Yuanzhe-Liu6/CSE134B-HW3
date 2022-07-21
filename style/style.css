@@ -2,11 +2,18 @@
     --vw-lg: 1920px;
     --vw-md: 1366px;
     --vw-sm: 600px;
-    --bg-color: white;
+    --bg-color: rgb(255, 255, 255);
     --nav-color: bisque;
     font-size: large;
     --header-color: #1ed49d;
 }
+
+@font-face {
+    font-family: CustomFont;
+    src: url(../font/LoveChristabelaRegular.ttf);
+}
+
+
 * {
     background-color: var(--bg-color);
 }
@@ -18,7 +25,9 @@ header{
     text-align: center;
     padding-top: 1.5rem;
     height: 35rem;
+    background: url("../img/home3.png") repeat 0 0;
     background-color: var(--header-color);
+    
 }
 
 
@@ -44,6 +53,7 @@ nav {
     font-size: 1.2rem;
     text-align: right;
     padding-right: 20%;
+    font-family: CustomFont, serif, 'Times New Roman', Times;
 }
 
 nav a:hover{
@@ -64,6 +74,20 @@ nav a{
     text-decoration: none;
     font-size: 1.5rem;
 }
+main{
+    text-align: center;
+}
+aside{
+    float: left;
+    position: fixed;
+    background-color: aqua;
+    text-align: center;
+}
+
+
+aside *{
+    background-color: aqua;
+}
 
 h1, h2{
     text-align: center;
@@ -72,9 +96,12 @@ iframe{
     text-align: center;
     background-color: aliceblue;
 }
-
+.tip{
+    border: 1px outset aquamarine;
+}
 .tips pre{
     text-align: center;
+    
 }
 
 pre {
@@ -86,3 +113,38 @@ ol{
     padding-left: 40%;
     font-size: 1.5rem;
   }
+
+@media screen and (max-width: 1366px) {
+    header{
+        font-size: xx-large;
+        margin: auto;
+        text-align: center;
+        padding-top: 1.5rem;
+        height: 35rem;
+        background: url("../img/career.jpg") repeat 0 0;
+        background-color: var(--header-color);
+    }
+    ol{
+        padding: 0%;
+    }
+    ol{
+        font-size: 2rem;
+        text-align: left;
+      }
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        font-size: xx-large;
+        margin: auto;
+        text-align: center;
+        padding-top: 1.5rem;
+        height: 17rem;
+        background: url("../img/home1.png") repeat 0 0;
+        background-color: var(--header-color);
+    }
+    ol{
+
+        font-size: 1.5rem;
+      }
+}
